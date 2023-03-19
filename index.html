@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>PAGINA DE GATITOS</title>        
+    </head>
+<body>
+    <h2>AppDeGatos</h2>
+    <main>
+        <p> <strong>Haz click </strong>aqui <b>para ver mas</b> <a href="#">imagenes de gatos.</a></p>
+        <a href="https://www.zooplus.es/magazine/gatos/gatitos"><img
+                src="https://ca-times.brightspotcdn.com/dims4/default/c3f4b96/2147483647/strip/true/crop/1970x1108+39+0/resize/1200x675!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001"
+                alt="Un lindo gato naranja que esta jugando">
+        </a>
+        <img src="gatito.jfif" alt="gatito de patitas cortas">
+        <hr>
+        <h3>Listas de gatos</h3>
+        <div>
+            <p> Cosas que los gatos <em>aman:</em> </p>
+            <ul>
+                <li> <s>Menta gatuna</s> </li>
+                <li>Apuntadores laser</li>
+                <li>Lana</li>
+            </ul>
+            <hr>
+            <img src="gyl.jpg" alt="Gatito jugando con lana">
+            <p>Cosas que los gatos odian:</p>
+            <ol>
+                <li>Tratamiento anti pulgas</li>
+                <li>Truenos</li>
+                <li>Otros gatos</li>
+            </ol>
+        </div>
+
+        <!--creacion de formulario-->
+        <form action="/enviar-respuesta">
+            <!--input sirve para pedir al usuario el ingreso de datos
+                se utiliza el atributo placeholder para especificar que necesitamos que se 
+                ingrese en el campo-->
+            <!--el elemento br sirve para crear un salto de linea.-->
+            <input type="text" placeholder="nombre de tu gato">
+            <br>
+            <!--el boton sirve para enviar o adquirir el valor de los input-->
+            <!--campo obligatorio se pone el tipo required-->
+            <input type="text" placeholder="Url de foto de tu gato" required>
+            <br>
+
+            <!--botones de radio deben ir en un grupo el cual pertenece a la etiqueta name y todos deben tener el mismo grupo de pertenencia-->
+            <p>Color de tu gato</p>
+            <!--La etiqueta label nos permite seleccionar los radio button desde la etiqueta (nombre) de la opcion
+                    el atributo for sirve para emparejar con el id del input-->
+            <!--para marcar una opcion por defecto se utiliza el atributo checked-->
+            <label for="R1"><input type="radio" name="color" id="R1" checked> Negro</label>
+            <br><label for="R2"><input type="radio" name="color" id="R2" value=Blanco"> Blanco</label>
+            <br><label for="R3"><input type="radio" name="color" id="R3" value=Marron""> Marron</label>
+            <br><label for="R4"><input type="radio" name="color" id="R4" value="Gris"> Gris</label>
+            <!--casilla de verificacion-->
+            <p>Comportamiento de tu gato</p>
+            <label for="cariñoso"><input type="checkbox" name="personalidad" id="cariñoso"
+                    value="cariñoso">Carinoso</label>
+            <br><label for="Perezoso"><input type="checkbox" name="personalidad" id="Perezoso" checked
+                    value="perezoso">Perezoso</label>
+            <br><label for="Energico"><input type="checkbox" name="personalidad" id="Energico"
+                    value="energico">Energico</label>
+            <br><button type="submit">enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Sin derechos de Autor</p>
+    </footer>
+</body>
+
+</html>
